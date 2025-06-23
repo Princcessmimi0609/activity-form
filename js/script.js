@@ -6,14 +6,15 @@
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
 
-            // Convert image to Base64    
+           // Convert image to Base64    
             const image_fileContent = await new Promise((resolve, reject) =>{
-                const file = formData.get("image");    
-                const fileReader = new FileReader();
-                fileReader.onload = (event) => resolve(event.target.result);
-                fileReader.onerror = (error) => reject(error);
-                fileReader.readAsDataURL(data.image);
-            });            
+               const file = formData.get("image");
+               const reader = new FileReader();
+               reader.onload = () => resolve(reader.result); // full data URL
+               reader.onerror = reject;
+               reader.readAsDataURL(file);
+      });
+                  
         
 
         console.log(image_fileContent);
