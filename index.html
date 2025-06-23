@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-     <style>
-        /* Blurred background layer */
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Form
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" rel="stylesheet"/>
+  <style>
+   /* Blurred background layer */
         body::before {
             content: '';
             position: absolute;
@@ -106,58 +106,72 @@
             margin-top: 20px;
             margin-left: 60px;
         }
-    </style>    
-
-    </head>
-        <div class="a">
-            <img src="images/Glasgow.png" alt="Glasgow" width="200" height="200">
-            <h1>The Churches of God in Glasgow</h1>
-            <a href="https://www.bing.com/ck/a?!&&p=94537a9706e5d521585637f05f270b75a533a34dfa1a228ea69c57e613eebc2aJmltdHM9MTc1MDM3NzYwMA&ptn=3&ver=2&hsh=4&fclid=1d265eda-3553-622f-0b20-4b37346b63c3&u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUNvbHN0b24lMjBNaWx0b24lMjBQYXJpc2glMjBDaHVyY2gmc3M9eXBpZC5ZTjEwMjl4MTA2NDI4Mzc4JnBwb2lzPTU1Ljg5OTM5MTE3NDMxNjQwNl8tNC4yNTM4MjE4NDk4MjI5OThfQ29sc3RvbiUyME1pbHRvbiUyMFBhcmlzaCUyMENodXJjaF9ZTjEwMjl4MTA2NDI4Mzc4fiZjcD01NS44OTkzOTF-LTQuMjUzODIyJnY9MiZzVj0xJkZPUk09TVBTUlBM&ntb=1">
-                Address: 20 Egilsay Crescent, Glasgow G22 7PF </a>
-        </div>
-
-<body>
+  </style>
+ </head>
+ <div class="a">
+  <img alt="Church logo" class="img-fluid" height="200" src="images/Glasgow.png" width="200"/>
+  <h1>
+   The Churches of God in Glasgow
+  </h1>
+  <a href="https://www.bing.com/ck/a?!&amp;&amp;p=94537a9706e5d521585637f05f270b75a533a34dfa1a228ea69c57e613eebc2aJmltdHM9MTc1MDM3NzYwMA&amp;ptn=3&amp;ver=2&amp;hsh=4&amp;fclid=1d265eda-3553-622f-0b20-4b37346b63c3&amp;u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUNvbHN0b24lMjBNaWx0b24lMjBQYXJpc2glMjBDaHVyY2gmc3M9eXBpZC5ZTjEwMjl4MTA2NDI4Mzc4JnBwb2lzPTU1Ljg5OTM5MTE3NDMxNjQwNl8tNC4yNTM4MjE4NDk4MjI5OThfQ29sc3RvbiUyME1pbHRvbiUyMFBhcmlzaCUyMENodXJjaF9ZTjEwMjl4MTA2NDI4Mzc4fiZjcD01NS44OTkzOTF-LTQuMjUzODIyJnY9MiZzVj0xJkZPUk09TVBTUlBM&amp;ntb=1">
+   Address: 20 Egilsay Crescent, Glasgow G22 7PF
+  </a>
+ </div>
+ <body>
   <div class="container-lg">
-    <div class="d-flex justify-content-center" id="root">
-      <form id="applicationForm" class="mt-4">
-        <div class="row mb-3">
-            <label for="NameInput" class="form-label">Name</label>
-            <input type="text" class="form-control" id="NameInput" name="name" required>
-          </div>   
-
-          <div class="row mb-3">
-            <label for="AdultInput" class="form-label">Adult</label>
-            <input type="number" class="form-control" id="AdultInput" name="adult" required>
-          </div>
-
-          <div class="row mb-3">
-            <label for="HighSchoolInput" class="form-label">High School</label>
-            <input type="number" class="form-control" id="HighSchoolInput" name="highSchool" required>
-          </div>
-
-          <div class="row mb-3">
-            <label for="PrimaryInput" class="form-label">Primary School</label>
-            <input type="number" class="form-control" id="PrimaryInput" name="primarySchool" required>
-          </div>
-
-          <div class="row mb-3">
-            <label for="ToddlerInput" class="form-label">Toddler</label>
-            <input type="number" class="form-control" id="ToddlerInput" name="toddler" required>
-          </div>
-
-        <div class="mb-3">
-          <label for="EmailInput" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="EmailInput" name="emailAddress">
-        </div>
-       
-        <div class="mb-3">
-          <label for="FileInput_RImage" class="form-label">Image</label>
-          <input type="file" class="form-control" id="FileInput_RImage" accept=".jpg,.png,.pdf" name="image">
-        </div>
-       
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+   <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+     <form class="mt-4" id="applicationForm">
+      <div class="row mb-3">
+       <label class="form-label" for="NameInput">
+        Name
+       </label>
+       <input class="form-control" id="NameInput" name="name" required="" type="text"/>
+      </div>
+      <div class="row mb-3">
+       <label class="form-label" for="AdultInput">
+        Adult
+       </label>
+       <input class="form-control" id="AdultInput" name="adult" required="" type="number"/>
+      </div>
+      <div class="row mb-3">
+       <label class="form-label" for="HighSchoolInput">
+        High School
+       </label>
+       <input class="form-control" id="HighSchoolInput" name="highSchool" required="" type="number"/>
+      </div>
+      <div class="row mb-3">
+       <label class="form-label" for="PrimaryInput">
+        Primary School
+       </label>
+       <input class="form-control" id="PrimaryInput" name="primarySchool" required="" type="number"/>
+      </div>
+      <div class="row mb-3">
+       <label class="form-label" for="ToddlerInput">
+        Toddler
+       </label>
+       <input class="form-control" id="ToddlerInput" name="toddler" required="" type="number"/>
+      </div>
+      <div class="mb-3">
+       <label class="form-label" for="EmailInput">
+        Email Address
+       </label>
+       <input class="form-control" id="EmailInput" name="emailAddress" type="email"/>
+      </div>
+      <div class="mb-3">
+       <label class="form-label" for="FileInput_RImage">
+        Image
+       </label>
+       <input accept=".jpg,.png,.pdf" class="form-control" id="FileInput_RImage" name="image" type="file"/>
+      </div>
+      <button class="btn btn-primary" type="submit">
+       Submit
+      </button>
+     </form>
     </div>
+   </div>
+   <div class="d-flex justify-content-center" id="root">
+   </div>
   </div>    
 
     <script type="text/javascript">
