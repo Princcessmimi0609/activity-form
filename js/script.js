@@ -32,7 +32,7 @@
             };
 
             
-            fetch("https://default362a4d9a4ee448f192595cb3b51294.18.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ef5cf03a4f3042c9a0b3a1f393455eba/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=Default-362a4d9a-4ee4-48f1-9259-5cb3b5129418",
+            fetch("https://default362a4d9a4ee448f192595cb3b51294.18.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ef5cf03a4f3042c9a0b3a1f393455eba/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=Default-362a4d9a-4ee4-48f1-9259-5cb3b5129418&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=VsP3mfj5aKgMvF2A_OyL1MU_qaFPoevnFt-SqAW5CIk",
                 {
                     method : "POST",
                     headers : {
