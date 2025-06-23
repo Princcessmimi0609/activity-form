@@ -8,11 +8,10 @@
 
            // Convert image to Base64    
             const image_fileContent = await new Promise((resolve, reject) =>{
-               const file = formData.get("image");
                const reader = new FileReader();
-               reader.onload = () => resolve(reader.result); // full data URL
-               reader.onerror = reject;
-               reader.readAsDataURL(file);
+               filereader.onload = (event) => resolve(event.target.result); 
+               filereader.onerror = (error) => reject(error);
+               filereader.readAsDataURL(data.image);
       });
                   
         
@@ -49,14 +48,12 @@
         // Show confirmation + preview
                 const root = document.getElementById("root");
                 root.innerHTML = `
+                root.innerHTML = `
                 <div class="text-center">
-              <h2 class="mb-3">🎉 Thank you for your submission!</h2>
-              <p>Here's a preview of your uploaded image:</p>
-              <img src="${imageBase64}" alt="Uploaded Image" style="max-width: 300px; border-radius: 10px;" />
-              <br/>
-              <button onclick="window.location.reload()" class="btn btn-secondary mt-3">Submit another response</button>
+                <h1 style="color: blue;"><br>🎉Congrats !</br>Your have successfully submitted the form !</br></h1>
+                <button class="btn btn-secondary mt-3" onclick="window.location.reload();">Submit again</button>
             </div>
-          `;
+        `;
         }
                    
         window.onload = () => {
