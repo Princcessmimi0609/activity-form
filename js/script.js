@@ -8,6 +8,7 @@
 
             // Convert image to Base64    
             const image_fileContent = await new Promise((resolve, reject) =>{
+                const file = formData.get("image");    
                 const fileReader = new FileReader();
                 fileReader.onload = (event) => resolve(event.target.result);
                 fileReader.onerror = (error) => reject(error);
@@ -42,8 +43,9 @@
                     body : JSON.stringify(formattedData)
                 }); 
 
+        // Optional: send imageBase64 to Power Automate here...
 
-                // Show thank-you message & reset the form
+        // Show confirmation + preview
                 const root = document.getElementById("root");
                 root.innerHTML = `
                 <div class="text-center">
